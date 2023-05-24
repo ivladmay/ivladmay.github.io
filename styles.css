@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background-color: #545556;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 1000px;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0,0,0,0.7);
+}
+
+
+
+/* Левая колонка */
+.container .left_side {
+  position: relative;
+  padding: 30px;
+  background-color: #2a2b2c;
+}
+
+/* Контейнер для фото, инициалов и должности */
+.photo_and_name {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #5096F1;
+}
+
+/* Фото */
+.photo_and_name .img_box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.photo_and_name .img_box img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Имя */
+.photo_and_name h2 {
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+/* Должность */
+.photo_and_name h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #ccc;
+}
+
+/* Контейнер для навыков */
+.skills {
+  padding-top: 40px;
+}
+
+/* Заголовок */
+.skills .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* Список навыков */
+.skills ul {
+  position: relative;
+}
+
+.skills ul li {
+  position: relative;
+  margin: 10px 20px;
+  color: #ccc;
+  font-weight: 300;
+}
+
+/* Маркер */
+.skills ul li::marker {
+  color: #5096F1;
+}
+
+/* Контейнер для связи со мной */
+.contacts {
+  padding-top: 40px;
+}
+
+/* Заголовок */
+.contacts .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* Список */
+.contacts ul {
+  position: relative;
+}
+
+.contacts ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #ccc;
+  font-weight: 300;
+}
+
+/* Ссылка на соцсеть */
+.contacts ul li a {
+  color: #ccc;
+  font-weight: 300;
+}
+
+.contacts ul li a:active {
+  color: rgb(220, 56, 56);
+}
+
+.contacts ul li a:visited {
+  color: rgb(174, 46, 174)
+}
+
+/* Иконка */
+.contacts ul li i{
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #5096F1;
+}
+
+
+
+/* Правая колонка */
+.container .right_side {
+  position: relative;
+  padding: 40px;
+  background-color: #151515;
+}
+
+/* Контейнер для каждого блока */
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+/* Заголовок каждого блока */
+.about .title {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #b2b2b2;
+}
+
+/* Ссылка на проект */
+.about .project a {
+  font-weight: 600;
+  color: #5096F1;
+}
+
+.about .project a:active {
+  color: rgb(220, 56, 56);
+}
+
+.about .project a:visited {
+  color: rgb(174, 46, 174);
+}
+
+/* Описание проекта */
+.about .project p {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+/* Список полученных навыков */
+.acquired_skills h3 {
+  color: #ccc;
+}
+
+.acquired_skills ul {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.acquired_skills ul li {
+  color: #b2b2b2;
+}
+
+/* Маркер */
+.acquired_skills ul li::marker {
+  color: #5096F1;
+}
+
+/* Контейнер для опыта работы */
+.about .work {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+/* Количество лет в компании */
+.about .work .years {
+  min-width: 150px;
+}
+
+.about .work .years h5 {
+  text-transform: uppercase;
+  color: #6b6c6e;
+  font-weight: 600;
+}
+
+/* Должность */
+.about .work h3 {
+  text-transform: uppercase ;
+  color: #5096F1;
+  font-size: 16px;
+}
+
+/* Контейнер для образования */
+.about .education {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+/* Период обучения */
+.about .education .years {
+  min-width: 150px;
+}
+
+.about .education .years h5 {
+  text-transform: uppercase;
+  color: #6b6c6e;
+  font-weight: 600;
+}
+
+/* Специальность */
+.about .education h3 {
+  text-transform: uppercase ;
+  color: #5096F1;
+  font-size: 16px;
+}
+
+/* Сертификат */
+.certificate_box img {
+  width: 200px;
+  height: 150px;
+  transition: 1s;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.certificate_box img:hover {
+  transform: scale(4);
+}
+
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about .work {
+    flex-direction: column;
+  }
+
+  .about .work .years {
+    margin-bottom: 5px;
+  }
+
+  .about .education {
+    flex-direction: column;
+  }
+
+  .about .education .years {
+    margin-bottom: 5px;
+  }
+}
